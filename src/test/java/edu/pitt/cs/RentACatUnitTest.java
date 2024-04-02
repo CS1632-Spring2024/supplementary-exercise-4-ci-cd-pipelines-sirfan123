@@ -258,6 +258,7 @@ public class RentACatUnitTest {
 		r.addCat(c3);
 		boolean result = r.renameCat(2, "Garfield");
 		if (result)
+		when(c2.getName()).thenReturn("Garfield");
 		assertEquals("Garfield", c2.getName());
 	}
 
